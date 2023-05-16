@@ -1,7 +1,7 @@
 *{
     margin: 0px;
     box-sizing: border-box;
-    border: 1px block #f00;
+    border: 1px solid red;
 }
 
 header{
@@ -15,8 +15,8 @@ header{
 }
 header > img {
 
-    width: 5%;
-    height: 5%;
+    width: 50px;
+    height: 50px;
 
 }
 body{
@@ -24,13 +24,15 @@ body{
     color: #fff;
     text-align: center;
 }
-.borrao{
-    width: 50%;
+.introducao-imagem-gatos{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100vw;
     height: 50%;
 }
-.introducao-imagem-gatos{
-    width: 50%;
-    height: 50%;
+img {
+    backdrop-filter: blur(20px);
 }
 
 
