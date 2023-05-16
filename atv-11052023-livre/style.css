@@ -6,5 +6,17 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-between;
-    
+    background-color: rgb(79, 97, 180);
+    color: #fff;
+    font-family:cursive;
+    padding: 2%;
 }
+body{
+    background-color: rgb(67, 75, 104);
+    color: #fff;
+    text-align: center;
+}
+
+
+
+
