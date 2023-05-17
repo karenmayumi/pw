@@ -14,20 +14,15 @@ header{
     padding: .7em 3em;
 }
 header > img {
-
     width: 5%;
     height: 5%;
-
 }
 body{
     background-color: rgb(67, 75, 104);
     color: #fff;
     text-align: center;
 }
-.borrao{
-    width: 50%;
-    height: 50%;
-}
+
 .introducao-imagem-gatos{
     width: 50%;
     height: 50%;
