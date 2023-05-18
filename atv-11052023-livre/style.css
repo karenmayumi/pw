@@ -1,6 +1,7 @@
 *{
     margin: 0px;
     box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
 }
 
 header{
@@ -20,12 +21,36 @@ header > img {
 body{
     background-color: rgb(67, 75, 104);
     color: #fff;
-    text-align: center;
 }
-.introducao{
+section{
     display: flex;
     justify-content: center;
+    margin: 50px 0 15px;
 }
-
-
+.imagemdois > abbr > img{
+    max-width: 250px;
+    max-height: 250px;
+}
+.desc{
+    display: flex;
+    justify-content: center;
+    position: absolute;
+    text-align: center;
+    font-size: 35px;
+}
+main{
+    font-size: 25px;
+}
+.dondon{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.tincon{
+    display: flex;
+    flex-direction: row-reverse;
+    justify-content: space-around;
+    align-items: center;
+}
 
