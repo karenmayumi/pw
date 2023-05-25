@@ -1,4 +1,25 @@
 *{
     margin: 0px;
     box-sizing: border-box;
+    font-size: 20px;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #ffffff;
+    border: 1px solid red;
+    box-sizing: border-box;
+}
+body{
+    background-image: url(https://thumbs.dreamstime.com/b/gato-dom%C3%A9stico-que-lambe-pata-na-cama-preto-e-branco-encontra-se-lambendo-sua-esquerda-sendo-vesgo-no-fundo-h%C3%A1-uma-janela-com-154991044.jpg);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 100%;
+    background-position: -20%;
+    width: 100vw;
+    height: 100vh;
+}
+#caixa_texto{
+    width: 300px;
+    margin-left: 50%;
+}
+p{
+    text-align: center;
 }
