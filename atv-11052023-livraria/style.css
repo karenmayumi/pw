@@ -6,9 +6,8 @@
 body{
     width: 100vw;
     height: 100vh;
-    background-image: url(../img/livrosempilhados.png);
+    background-image: url(../atv-11052023-livraria/img/livrosempilhados.jpg);
     background-repeat: no-repeat;
-    background-size: 100% 100%;
     background-attachment: fixed;
     font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
