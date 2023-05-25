@@ -1,0 +1,50 @@
+*{
+    margin: 0px;
+    box-sizing: border-box;
+    font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+}
+
+body{
+    background-color: #fff;
+    background-image: url(../img/aluno\ -\ Cópia.avif);
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: 49%;
+}
+h1{
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    color: #000000;
+    text-align: center;
+    margin-top: 3%;
+}
+h3{
+    color: #000000;
+    text-align: center;
+}
+h4{
+    color: #fff;
+}
+p{
+    color: #ffffff;
+    font-size: 12px;
+    font-weight: bold;
+}
+#area{
+    position: relative;
+    left: 50%;
+    width: 320px;
+    height: 250px;
+}
+#area #formulario{
+    position: absolute;
+    display: block;
+}
+fieldset{
+    margin-top: 29%;
+    width: 320px;
+    height: 450px;
+    background-color: #a7c0dc;
+}
+input, fieldset, textarea{
+    border-radius: 10px;
+}
