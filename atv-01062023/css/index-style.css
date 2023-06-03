@@ -24,15 +24,15 @@ ul{
 
 }
 a{
-    color: #6e7fe0;
+    color: #fff;
     font-size: 25px;
-    border-radius: 100px;
-    padding: 5px 10px;
+    border-radius: 110px;
+    padding: 2px 20px;
     transition: 0.4s;
 }
 a:hover{
-    color: #fff;
-    background-color: #031d55;
+    color: rgb(1, 8, 27);
+    background-color: #d2ddf5;
     transition: 0.2s;
 }
 
