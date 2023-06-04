@@ -2,25 +2,24 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    list-style: none;
-    /* border: 1px solid rgba(255, 0, 0, 0.397); */
+    border: 1px solid rgba(255, 0, 0, 0.397);
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-decoration: none;
+    list-style: none;
 
 }
 
 nav{
-    display: flex;
+    display:flex;
     justify-content: space-around;
     align-items: center;
     height: 10vh;
-    width: 100vw;
+    max-width: 10vw;
     background-color: #090e29;
 }
 ul{
     display: flex;
     justify-content: space-evenly;
-    width: 100vw;
 
 }
 a{
@@ -33,14 +32,14 @@ a{
 a:hover{
     color: rgb(1, 8, 27);
     background-color: #d2ddf5;
-    transition: 0.2s;
+    transition: 0.4s;
 }
 
 main{
     display: flex;
     height: 90vh;
     width: 100vw;
-    background-image: linear-gradient(90deg,rgb(23, 21, 44),rgb(27, 45, 68));
+    background-image: linear-gradient(90deg,rgb(29, 20, 83),rgb(36, 89, 160));
 }
 
 .left-half{
@@ -61,8 +60,8 @@ main{
     height: 80vh;
 }
 .form{
-    width: 30vw;
-    height: 60vh;
+    min-width: 75px;
+    min-height: 100px;
     flex-direction: column;
     position: relative;
     margin-top: 10vh;
@@ -70,8 +69,6 @@ main{
     border-radius: 15px;
 }
 .form-items{
-    min-width: 300px;
-    min-height: 300px;
     display: flex;
     justify-content: center;
     flex-direction: column;
@@ -80,18 +77,19 @@ main{
     
 }
 
-.form-text-info, b{
+.form-text-info{
     font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     color: #c8d3e2;
     padding: 15px;
 }
-input , textarea{
-    max-width: 30vw;
+textarea{
+    min-width: 400px;
+    max-width: 400px;
+    min-height: 150px;
+    max-height: 150px;
 }
 .btn-enviar-form{
     padding: 3px 15px;
-    margin-top: 20px;
-    margin-left: 22vw;
 
 }
 footer{
