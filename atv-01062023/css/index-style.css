@@ -3,7 +3,7 @@
     padding: 0px;
     box-sizing: border-box;
     list-style: none;
-    /* border: 1px solid rgba(255, 0, 0, 0.397); */
+    border: 1px solid rgba(255, 0, 0, 0.397);
     font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
     text-decoration: none;
 
@@ -44,9 +44,9 @@ main{
 }
 
 .first-title{
-    height: 100px;
+    height: 500px;
     text-align: center;
-    width: 100vw;
+    width: 50vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -54,6 +54,9 @@ main{
     color: #fff;
 }
 
+
+.form{
+}
 footer{
     background-color: #051027;
     color: rgb(131, 140, 160);
