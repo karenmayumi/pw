@@ -5,7 +5,7 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Index</title>
+    <title>Contato</title>
 </head>
 <body>
     
@@ -14,9 +14,11 @@
     <header>
         <nav>
         <ul>
-            <li><a href="index.html">Home</a></li>
-            <li><a href="tabela.html">Classificação</a></li>
-            <li><a href="contato.html">Contato</a></li>
+            <li><a href="index.html" id="link-index">Home</a></li>
+            <li><a href="tabela.html" id="link-tabela">Classificação</a></li>
+            
+                <li><a href="contato.html" id="link-contato">Contato</a></li>
+                <div class="linha"></div>
         </ul>
         </nav>
     </header>
@@ -29,9 +31,8 @@
 
                 <div class="form-items" id="form-text-info"><span>Contate-nos!</span></div>
                 <div class="form-items" id="form-nome"><span>Nome Completo</span><br><input type="text" maxlength="40" name="form-nome-input"></div>
-                <div class="form-items" id="form-email"><span>E-mail</span><br><input type="text" maxlength="40" name="form-email-input"></div>
+                <div class="form-items" id="form-email"><span>E-mail</span><br><input required type="email" maxlength="40" name="form-email-input"></div>
                 <div class="form-items" id="form-motivo"><span>Motivo</span><br><textarea maxlength="260" name="form-motivo-input"></textarea></div>
-
                 <input type="submit" class="btn-enviar-form"></input>
                 
             </div>

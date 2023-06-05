@@ -3,7 +3,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    /* border: 1px solid rgba(255, 0, 0, 0.397); */
+    border: 1px solid rgba(255, 0, 0, 0.397);
     font-family:'poppins', sans-serif;
     text-decoration: none;
     list-style: none;
@@ -45,8 +45,23 @@ a{
 }
 a:hover{
     color: rgb(1, 8, 27);
-    background-color: #d2ddf5;
+    background-color: #c8d3ec;
     transition: 0.4s;
+    
+}
+
+.ativado{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid rgb(3, 255, 37);
+}
+
+
+.linha {
+    width: 10px;
+    height: 10px;
+    background-color: #fff;
 }
 
 .left-half{
