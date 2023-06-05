@@ -10,6 +10,8 @@
 
 nav{
     background-color: #090e29;
+    position: fixed;
+    top: 0px;
 }
 
 li a{
