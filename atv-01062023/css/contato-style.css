@@ -8,14 +8,14 @@
     list-style: none;
 
 }
-
+body{
+    background-image: linear-gradient(90deg,rgb(29, 20, 83),rgb(36, 89, 160));
+}
 nav{
     background-color: #090e29;
     position: fixed;
     top: 0px;
     height: 10vh;
-    width: 100vw;
-    background-color: #090e29;
 }
 ul{
     position: absolute;
@@ -37,8 +37,8 @@ a:hover{
 main{
     display: flex;
     height: 100vh;
-    width: 100vw;
-    background-image: linear-gradient(90deg,rgb(29, 20, 83),rgb(36, 89, 160));
+    width: 100%;
+    
 }
 
 .left-half{
@@ -81,12 +81,7 @@ main{
     color: #c8d3e2;
     padding: 15px;
 }
-textarea{
-    min-width: 400px;
-    max-width: 400px;
-    min-height: 150px;
-    max-height: 150px;
-}
+
 .btn-enviar-form{
     padding: 3px 15px;
 
@@ -94,5 +89,5 @@ textarea{
 footer{
     background-color: #051027;
     color: rgb(131, 140, 160);
-    width: 100vw;
+    width: 100%;
 }

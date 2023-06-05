@@ -3,18 +3,118 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    border: 1px solid rgba(255, 0, 0, 0.397);
+    /* border: 1px solid rgba(255, 0, 0, 0.397); */
     font-family:'poppins', sans-serif;
+    text-decoration: none;
+    list-style: none;
+}
+body{
+    background-image: linear-gradient(90deg,rgb(29, 20, 83),rgb(36, 89, 160));
 
 }
-
+main{
+    
+    display: flex;
+    flex-direction: row;
+}
 nav{
     background-color: #090e29;
     position: fixed;
     top: 0px;
+    height: 60px;
+    width: 100vw;
+    
+}
+ul{ 
+    display: flex;
+    justify-content: space-evenly;
+    padding: 10px;
+    position: absolute;
+    width: 100vw;
+
 }
 
-li a{
-text-decoration: none;
-list-style: none;
+a{
+    color: #fff;
+    font-size: 25px;
+    border-radius: 110px;
+    padding: 2px 20px;
+    transition: 0.4s;
+}
+a:hover{
+    color: rgb(1, 8, 27);
+    background-color: #d2ddf5;
+    transition: 0.4s;
+}
+
+.left-half{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 50vw;
+    font-size: 50px;
+    color: #fff;
+}
+.right-half{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50vw;
+    height: 100vh;
+}
+.form{
+    width: 450px;
+    height: 500px;
+    background-color: #040822;
+    border-radius: 25px;
+    padding: 25px;
+    margin-top: 50px;
+}
+#form-text-info span{
+    color: #407785;
+    font-size: 15px;
+    text-align: center;
+}
+.form-items span{
+    color: #9ec6f3; 
+    /* #9485f8 */
+    transition: 0.6s;
+    font-size: 25px;
+}
+input, textarea{
+    background-color: #04082200;
+    border: 1px solid #fff;
+    border-radius: 17px;
+    width: 100%;
+    height: 40px;
+    transition: 0.2s;
+    padding: 5px 15px;
+    color: #fff;
+}
+.form-items input:focus, textarea:focus{
+    background-color: #fff;
+    color: #040822;
+    font-size: 20px;
+}
+#form-motivo textarea{
+    min-height: 150px;
+    max-height: 150px;
+    min-width: 100%;
+    max-width: 100%;
+    padding: 10px 10px;
+}
+.btn-enviar-form{
+    margin-top: 20px;
+}
+.btn-enviar-form:hover{
+    background-color: #bee4e9;
+    border-color: #bee4e9;
+    color: #040822;
+    cursor: pointer;
+    transition: 0.4s;
+}
+footer{
+    height: 100px;
+    width: 100%;
 }

@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html lang="pt-br">
 <head>
-    <link rel="stylesheet" href="../atv-01062023/css/contato-style.css">
+    <link rel="stylesheet" href="../atv-01062023/css/contato-style-2.css">
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -25,12 +25,11 @@
         <div class="right-half">
             <div class="form">
 
-                <div class="form-items">
-                <div class="form-text-info">Insira as informações a seguir e nossa equipe de suporte verificará a situação:</div>
-                <div class="form-nome"><b>Nome Completo</b><br><input type="text" maxlength="40" name="form-nome-input"></div>
-                <div class="form-email"><b>E-mail</b><br><input type="text" maxlength="40" name="form-email-input"></div>
-                <div class="form-motivo"><b>Motivo</b><br><input type="text" name="form-motivo-input"></input></div>
-                </div>
+                <div class="form-items" id="form-text-info"><span>Contate-nos!</span></div>
+                <div class="form-items" id="form-nome"><span>Nome Completo</span><br><input type="text" maxlength="40" name="form-nome-input"></div>
+                <div class="form-items" id="form-email"><span>E-mail</span><br><input type="text" maxlength="40" name="form-email-input"></div>
+                <div class="form-items" id="form-motivo"><span>Motivo</span><br><textarea maxlength="260" name="form-motivo-input"></textarea></div>
+
                 <input type="submit" class="btn-enviar-form"></input>
                 
             </div>
@@ -40,6 +39,7 @@
 
     <footer>
         Bauru, 01 de Junho de 2023
+        <textarea name="" id="" cols="30" rows="10"></textarea>
     </footer>
 </body>
 </html>
