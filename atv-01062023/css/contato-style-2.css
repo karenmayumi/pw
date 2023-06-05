@@ -13,6 +13,8 @@ body{
     animation: 4s linear 0s infinite alternate girar-fundo;
 }
 
+
+
 main{
     display: flex;
     flex-direction: row;
@@ -91,6 +93,7 @@ input, textarea{
     transition: 0.2s;
     padding: 5px 15px;
     color: #fff;
+    font-size: 20px;
 }
 .form-items input:focus, textarea:focus{
     background-color: #fff;
