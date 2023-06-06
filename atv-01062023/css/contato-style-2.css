@@ -51,20 +51,6 @@ a:hover{
     
 }
 
-.ativado{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border: 5px solid rgb(3, 255, 37);
-}
-
-
-.linha {
-    width: 10px;
-    height: 10px;
-    background-color: #fff;
-}
-
 .left-half{
     display: flex;
     align-items: center;
