@@ -10,7 +10,6 @@
 }
 body{
     background-image: linear-gradient(90deg,rgb(29, 20, 83),rgb(36, 89, 160));
-    animation: 4s linear 0s infinite alternate girar-fundo;
 }
 
 
