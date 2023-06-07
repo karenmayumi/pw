@@ -3,7 +3,7 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    /* border: 1px solid rgba(255, 0, 0, 0.397); */
+    border: 1px solid rgba(255, 0, 0, 0.397);
     font-family:'poppins', sans-serif;
     text-decoration: none;
     list-style: none;
@@ -11,11 +11,6 @@
 body{
     background-image: linear-gradient(90deg,rgb(29, 20, 83),rgb(36, 89, 160));
 
-}
-
-main{
-    display: flex;
-    flex-direction: row;
 }
 nav{
     background-color: #090e29;
@@ -48,6 +43,23 @@ a:hover{
     transition: 0.4s;
     
 }
+main{
+    display: flex;
+    flex-direction: column;
+    margin-top: 60px;
+}
+
+.Dondon{
+    width: 65vw;
+    height: 200px;
+}
+
+.swiper {
+    width: 400px;
+    height: 300px;
+  }
+
+
 
 footer{
     height: 200px;

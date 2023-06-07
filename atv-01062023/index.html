@@ -5,6 +5,10 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"
+    />
     <title>Index</title>
 </head>
 <body>
@@ -22,64 +26,79 @@
     </header>
 
     <main>
-        <div class="carrosel-initial">
-            
-            <img src="#" alt="first-image">1
-            <img src="#" alt="second-image">2
-            <img src="#" alt="third-image">3
-            <img src="#" alt="four-image ">4
-        </div>
         
         <!-- Primeira sessão -->
-        <article class="Dondon">
-            <section class="infos-basics">
-                <figure>
-                    
-                </figure>
-            </section>
-            <section class="Dondon-facts">
-
+        <article class="Gatos">
+            <h1>Cats</h1>
+            <section class="Dondon">
+                <h4>Dondon</h4>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Repudiandae, ducimus tempora! Quae accusantium consectetur totam.
+                </p>
+                <p>
+                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Assumenda, architecto itaque veritatis consequatur tenetur aliquam, autem suscipit libero perspiciatis nesciunt odit impedit! Aperiam, odio.
+                </p>
             </section>
             <section class="Dondon-imgs">
+                <!-- Slider main container -->
+                <div class="swiper">
+                <!-- Additional required wrapper -->
+                <div class="swiper-wrapper">
+                    <!-- Slides -->
+                    <div class="swiper-slide"><img src="../atv-01062023/img/dondon-relax.jpeg" alt=""></div>
+                    <div class="swiper-slide">Slide 2</div>
+                    <div class="swiper-slide">Slide 3</div>
+                    ...
+                </div>
+                <!-- If we need pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- If we need navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+
+                <!-- If we need scrollbar -->
+                <div class="swiper-scrollbar"></div>
+                </div>
+            </section>
+            <section class="Tincon-imgs">
+
+            </section>
+            <section class="Tincon">
 
             </section>
         </article>
 
         <!-- Segunda sessão -->
         <article class="Music">
-            <section class="infos-basics">
+            <h1>Musicas</h1>
+            <section class="music-infos">
 
             </section>
-            <section class=Music-facts">
-
-            </section>
-            <section class="Music-imgs">
+            <section class="music-links">
 
             </section>
         </article>
 
         <!-- Terceira sessão -->
-        <article class="Sleep">
-            <section class="infos-basics">
+        <article class="scenario">
+            <h1>Cenários</h1>
+            <section class="scenario-infos">
 
             </section>
-            <section class="Sleep-facts">
+            <section class="scenario-imgs">
 
             </section>
-            <section class="Sleep-imgs">
-
-            </section>
+            
         </article>
 
         <!-- Quarta sessão -->
         <article class="Anime">
-            <section class="infos-basics">
+            <h1>Songs</h1>
+            <section class="anime-infos">
 
             </section>
-            <section class="Anime-facts">
-
-            </section>
-            <section class="Anime-imgs">
+            <section class="anime-imgs">
 
             </section>
         </article>
@@ -89,5 +108,29 @@
     <footer>
         Bauru, 01 de Junho de 2023
     </footer>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    <script>
+        const swiper = new Swiper('.swiper', {
+  // Optional parameters
+  direction: 'vertical',
+  loop: true,
+
+  // If we need pagination
+  pagination: {
+    el: '.swiper-pagination',
+  },
+
+  // Navigation arrows
+  navigation: {
+    nextEl: '.swiper-button-next',
+    prevEl: '.swiper-button-prev',
+  },
+
+  // And if we need scrollbar
+  scrollbar: {
+    el: '.swiper-scrollbar',
+  },
+});
+    </script>
 </body>
 </html>
