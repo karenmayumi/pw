@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <link rel="stylesheet" href="../avaliacao-2bimestre/css/contato.css">
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Contato</title>
+</head>
+<body>
+    <header>
+        <nav>
+        <ul>
+            <li><a href="../avaliacao-2bimestre/index.html" id="link-index">Home</a></li>
+            <li><a href="../avaliacao-2bimestre/imoveis.html" id="link-tabela">Imóveis</a></li>
+            <li><a href="../avaliacao-2bimestre/contato.html" id="link-contato">Contato</a></li>
+        </ul>
+        </nav>
+    </header>
+    <main>
+        <form>   
+            <fieldset>
+
+                <label for="inform-form" id="inform-text">Formulário de Contato</label>
+
+                <div class="form-item">
+                    <label for="form-label-nome">Nome Completo</label>
+                    <input type="text" maxlength="40" name="form-nome-input" placeholder="Carlina Amaral">
+                </div>
+                
+                <div class="form-item">
+                    <label for="form-label-nome">E-mail*</label>
+                    <input type="email" maxlength="40" name="form-email-input" required placeholder="carlinaamaral22@gmail.com">
+                </div>
+
+                <div class="form-item">
+                    <label for="form-label-dt-nasc">Data de Nascimento</label>
+                    <input type="date" maxlength="10" name="form-dt-nasc-input" placeholder="31/08/2007">
+                </div>
+
+                <div class="form-item">
+                    <label for="form-comentario-label">Comentário*</label>
+                    <textarea maxlength="260" name="form-motivo-input" placeholder="Belo carro!" required></textarea>
+                </div>
+
+                <div class="form-item">
+                    <button type="submit" id="btn-enviar-form" name="btn-enviar-form">Enviar</button>
+                </div>
+
+            </fieldset>
+        </form>
+    </main>
+    <footer>
+
+    </footer>
+</body>
+</html>
