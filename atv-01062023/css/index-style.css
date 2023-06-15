@@ -3,10 +3,11 @@
     margin: 0px;
     padding: 0px;
     box-sizing: border-box;
-    border: 1px solid rgba(255, 0, 0, 0.397);
+    /* border: 1px solid rgba(255, 0, 0, 0.397); */
     font-family:'poppins', sans-serif;
     text-decoration: none;
     list-style: none;
+    color: #fff;
 }
 body{
     background-image: linear-gradient(90deg,rgb(29, 20, 83),rgb(36, 89, 160));
@@ -48,16 +49,33 @@ main{
     flex-direction: column;
     margin-top: 60px;
 }
-
-.Dondon{
-    width: 65vw;
-    height: 200px;
+.Gatos{
+    margin: 50px 100px;
+}
+.Dondon, .Tincon{
+    width: 100%;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+#title-cats{
+    font-size: 50px;
+}
+#Dondon-text, #Tincon-text{
+    width: 60%;
+    padding: 40px;
+}
+#dondon-pic, #tincon-pic{
+    width: 450px;
+    height: 350px;
+    object-fit: cover;
+}
+.Tincon{
+    margin-top: 100px;
 }
 
-.swiper {
-    width: 400px;
-    height: 300px;
-  }
+
 
 
 
