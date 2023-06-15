@@ -62,6 +62,9 @@ main{
 #title-cats{
     font-size: 50px;
 }
+h4{
+    font-size: 25px;
+}
 #Dondon-text, #Tincon-text{
     width: 60%;
     padding: 40px;
