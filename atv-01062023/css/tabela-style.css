@@ -7,6 +7,7 @@
     font-family:'poppins', sans-serif;
     text-decoration: none;
     list-style: none;
+    color: #fff;
 }
 body{
     background-image: linear-gradient(90deg,rgb(29, 20, 83),rgb(36, 89, 160));
@@ -48,6 +49,31 @@ a:hover{
     transition: 0.4s;
     
 }
+
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+table{
+    margin-top: 100px;
+    text-align: center;
+    padding: 2px;
+    border: 1px solid #090e29;
+}
+td{
+    padding: 3px 15px;
+}
+.one{
+    font-size: 25px;
+}
+.first{
+    border-right: 1px solid #090e29;
+}
+.second{
+    text-align: start;
+}
+
 
 
 footer{
