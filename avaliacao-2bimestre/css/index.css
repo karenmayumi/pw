@@ -9,8 +9,7 @@
     max-width: 100vw;
 }
 body{
-    background-color: rgb(189, 217, 236);
-    width: 100vw;
+    background-color: rgb(201, 189, 236);
 }
 nav{
     background-color: #090e29;
@@ -27,6 +26,7 @@ ul{
     padding: 10px;
     position: absolute;
     width: 100vw;
+    list-style: none;
 
 }
 
@@ -43,4 +43,17 @@ a:hover{
     background-color: #c8d3ec;
     transition: 0.4s;
     
+}
+#link-index{
+    text-decoration: underline;
+}
+main{
+    display: flex;
+    justify-content: center;
+    max-width: 100%;
+    height: 500px;
+}
+footer{
+    background-image: linear-gradient( #ffffff00, rgb(49, 26, 80));
+    height: 400px;
 }
