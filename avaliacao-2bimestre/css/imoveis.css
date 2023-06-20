@@ -9,13 +9,9 @@
     max-width: 100vw;
     font-weight: bolder;
 }
-    body{
-        background-color: rgb(189, 217, 236);
-        background-image: url(../img/predio2-removebg-preview.png);
-        background-repeat: no-repeat;
-        background-attachment: fixed;
-        background-size: 400px;
-    }
+body{
+    background-color: #fae2b5;
+}
 nav{
     background-color: #090e29;
     position: fixed;
@@ -52,13 +48,7 @@ a:hover{
 #link-tabela{
     text-decoration: underline;
 }
-body{
-    background-color: #fae2b5;
-    background-image: url(../img/predio2-removebg-preview.png);
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-    background-size: 400px;
-}
+
 main{
     max-width: 100vw;
     display: flex;
