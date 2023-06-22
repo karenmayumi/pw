@@ -116,6 +116,8 @@ textarea{
     transition: 0.2s;
 }
 footer{
-    background-image: linear-gradient( #ffffff00, rgb(26, 49, 80));
+    background-image: linear-gradient( #ffffff00, #1a3150);
     height: 400px;
+    padding: 125px;
+    color: #ffffff59;
 }
