@@ -14,28 +14,28 @@ header{
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 2em;
-    background-color: #ffffff;
-    position: sticky;
-    top: 0;
+    padding: 0 5em;
+    background-color: #fff;
+    box-shadow: 0 0 10px #000;
+    position: fixed;
+    z-index: 2;
 
 }
 header ul{
     display: flex;
     height: min-content;
-    gap: 20px;
+    gap: 2em;
 }
 header ul li{
     list-style-type: none;
 }
 .header-link{
-    padding: 0 1em;
+    padding: 0 .25em;
     text-decoration: none;
     color: #000;
     font-size: 1.1rem;
     position: relative;
 }
-
 .header-link:after{
     content: '';
     width: 0;
@@ -49,8 +49,6 @@ header ul li{
     width: 100%;
     transition: .3s;
 }
-
-
 #icon-site{
     width: 75px;
     aspect-ratio: 1;
@@ -59,11 +57,7 @@ header ul li{
 
 .swiper {
     width: 100%;
-    aspect-ratio: 16 / 9;
-  }
-  .img{
-    width: 100%;
-    height: 500px;
+    aspect-ratio: 16 / 5;
   }
 
 .swiper-slide img{
@@ -71,4 +65,8 @@ header ul li{
     object-fit: cover;
     width: 100%;
 
+}
+
+body{
+    height: 300vh;
 }
