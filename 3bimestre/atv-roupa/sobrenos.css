@@ -1,11 +1,25 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500&display=swap');
 
+/* ...
+-Arrumar responsavidade
+ps: utlizar clamp e font-size
+*/
+
 *{
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: 1px solid red; */
+    /* border: 1px solid red;*/
     font-family: 'Poppins', sans-serif;
+}
+:root{
+    --pinklight: #e5b6c9;
+    --pink: #d81566;
+    --pinkdark: #57143d;
+    --purplelight:#d2c1e0;
+    --purple: #837ad8;
+    --purpledark: #581685;
+    --grey: #d6dbe4;
 }
 header{
     width: 100%;
@@ -39,7 +53,7 @@ header ul li{
 .header-link:after{
     content: '';
     width: 0;
-    border-bottom: 2px solid #d81566;
+    border-bottom: 2px solid var(--pink);
     position: absolute;
     top: 100%;
     left: 0;
@@ -50,13 +64,58 @@ header ul li{
     transition: .3s;
 }
 .atual-link{
-    border-bottom: 2px solid #837ad8;
+    border-bottom: 2px solid var(--purple);
 }
 
 #icon-site{
     width: 75px;
     aspect-ratio: 1;
 }
-body{
-    height: 300vh;
+
+#info-sn{
+    background-color: var(--grey);
+    padding: 5em 0;
+}
+.desc-base{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 0 15%;
+}
+#db1{
+    background-color: #242338;
+
+}
+#db2{
+    background-color: var(--pinkdark);
+}
+.img-sn{
+     width: 20em; 
+    margin: 0 5em;
+}
+.dos-text{
+    display: flex;
+    flex-direction: column;
+    margin: 20px;
+}
+.dt1 *{
+    color: var(--pinklight);
+}
+.dt2{
+    color: var(--purplelight);
+}
+
+.dos-text p{
+    text-indent: 2em;
+}
+h3{
+    font-weight: normal;
+    font-size: 2rem;
+}
+h3 span{
+    font-weight: bold;
+    text-decoration: underline;
+}
+#db2{
+    flex-direction: row-reverse;
 }

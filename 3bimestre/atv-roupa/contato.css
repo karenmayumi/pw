@@ -7,6 +7,12 @@
     /* border: 1px solid red;  */
     font-family: 'Poppins', sans-serif;
 }
+:root{
+    --grey: #d6dbe4;
+}
+body{
+    background-color: var(--grey);
+}
 header{
     width: 100%;
     height: 5em;
@@ -67,8 +73,10 @@ main{
 #form-suporte{
     height: 27.5em;
     width: 30em;
+    border-radius: 7px;
     box-shadow: 0 0 1.5em #d2a4f8;
     padding: 10px;
+    background-color: #fff;
 }
 #form-suporte fieldset{
     height: 100%;
@@ -79,4 +87,7 @@ main{
 .form-items{
     display: flex;
     flex-direction: column;
+}
+input, textarea{
+    background-color: #ecd8dd;
 }

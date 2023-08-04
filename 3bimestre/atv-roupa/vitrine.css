@@ -8,6 +8,12 @@
     /* border: 1px solid red; */
     font-family: 'Poppins', sans-serif;
 }
+:root{
+    --grey: #d6dbe4;
+}
+body{
+    background-color: var(--grey);
+}
 header{
     width: 100%;
     height: 5em;
@@ -61,13 +67,17 @@ header ul li{
 
 .swiper {
     width: 100%;
-    aspect-ratio: 16 / 5;
+    aspect-ratio: 3 / 1;
+  }
+  .swiper{
+    display: flex;
+    justify-content: center;
   }
 
 .swiper-slide img{
     overflow: hidden;
     object-fit: cover;
-    width: 100%;
+    width: 70%;
 
 }
 
