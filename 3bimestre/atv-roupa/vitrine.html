@@ -30,19 +30,21 @@
                 <div class="arrow" id="arrow-left"></div>
                 <div class="arrow" id="arrow-right"></div>
             </div>
-            <div id="slide-top">
-                <div id="slide-initial">
-                    <div class="slides"><img src="./img/img-slide-fashion.jpeg" alt="fashion"></div>
-                    <div class="slides"><img src="./img/img-slide-dior.jpeg" alt="gucci"></div>
-                    <div class="slides"><img src="./img/img-slide-voguepink.jpeg" alt="vogue"></div>
+            <div id="slide-both">
+                <div id="slide-top">
+                    <div id="slide-initial">
+                        <div class="slides"><img src="./img/img-slide-fashion.jpeg" alt="fashion"></div>
+                        <div class="slides"><img src="./img/img-slide-dior.jpeg" alt="gucci"></div>
+                        <div class="slides"><img src="./img/img-slide-voguepink.jpeg" alt="vogue"></div>
+                    </div>
                 </div>
+                <div id="slide-base">
+                    <div id="slide-initial">
+                        <div class="slides"><img src="./img/img-slide-fashion.jpeg" alt="fashion"></div>
+                        <div class="slides"><img src="./img/img-slide-dior.jpeg" alt="gucci"></div>
+                        <div class="slides"><img src="./img/img-slide-voguepink.jpeg" alt="vogue"></div>
+                    </div>
             </div>
-            <div id="slide-base">
-                <div id="slide-initial">
-                    <div class="slides"><img src="./img/img-slide-fashion.jpeg" alt="fashion"></div>
-                    <div class="slides"><img src="./img/img-slide-dior.jpeg" alt="gucci"></div>
-                    <div class="slides"><img src="./img/img-slide-voguepink.jpeg" alt="vogue"></div>
-                </div>
             </div>
             
         </div>
@@ -56,24 +58,17 @@
     </footer>
 
 
-    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-bundle.min.js"></script>
     <script>
 
-        const swiper = new Swiper('.swiper', {
-        // Optional parameters
-        direction: 'horizontal',
-        loop: true,
+        const all_slide = document.querySelector('#slide-both')
 
-        // If we need pagination
-        pagination: {
-            el: '.swiper-pagination',
-        },
+        const arrowL = document.querySelector('#arrow-left').addEventListener('click', ()=>{
+            if(arrowL)
+        })
 
-        // Navigation arrows
-        navigation: {
-            nextEl: '.swiper-button-next',
-            prevEl: '.swiper-button-prev',
-        },});
+        const arrowR = document.querySelector('#arrow-right')
+
+
     </script>
     
 
