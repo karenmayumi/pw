@@ -70,12 +70,11 @@
                  if(position_slide<3){
                 position_slide += 1;
                 all_slide.style.translate = position_slide * 100 + 'vw' //tag que calculará a posição e mudará
-
-                    if(position_slide==3){ //se a posicao do slide for a ultima
-                        arrowR.style.visibility = 'hidden' //esconder arrow direito
-                    }else{ //se não
-                        arrowR.style.visibility = 'visible' //deixá-lo visível
-                    }
+                    //if(position_slide==3){ //se a posicao do slide for a ultima
+                    //    arrowR.style.visibility = 'hidden' //esconder arrow direito
+                    //}else{ //se não
+                    //    arrowR.style.visibility = 'visible' //deixá-lo visível
+                    //}
                      
                  }else{
                     console.log('erro! alguem conseguiu clicar na seta direita mesmo estando no maximo permitido!')
@@ -89,10 +88,10 @@
                     all_slide.style.translate = (position_slide * 100) + 'vw' //tag que calculará a posição e mudará
                     
                     if(position_slide>0){ //quando maior que zero
-                        arrowL.style.visibility = 'visible'; //vai ser visivel
+                    //    arrowL.style.visibility = 'visible'; //vai ser visivel
                         //botar pointer events
                     }else{ //quando chegou no zero
-                        arrowL.style.visibility = 'hidden'; //vai ficar escondido
+                    //    arrowL.style.visibility = 'hidden'; //vai ficar escondido
                     }
                 }else{
                     console.log('erro! alguem conseguiu clicar na seta esquerda mesmo estando no minimo permitido!')
