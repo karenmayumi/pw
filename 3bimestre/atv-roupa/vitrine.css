@@ -126,9 +126,7 @@ main{
     border-right: 2em solid #000000d7;
     transition: .2s;
 }
-/*#arrow-left{
-    visibility: hidden;
-}*/
+
 #arrow-right{
     transform: scale(-1);
 }
