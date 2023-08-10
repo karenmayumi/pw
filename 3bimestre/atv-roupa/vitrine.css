@@ -72,6 +72,7 @@ main{
 
 #slider{
     position: relative;
+    overflow: hidden;
 }
 #slide-initial{
     width: 300vw;
