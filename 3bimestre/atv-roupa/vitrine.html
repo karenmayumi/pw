@@ -62,8 +62,9 @@
 
         var position_slide = 0; //posicao inicial = 0
         const all_slide = document.querySelector('#slide-both'); //variavel que mexera os slides
-
-        const arrowL = document.querySelector('#arrow-left').addEventListener('click', ()=>{
+        const arrowL = document.querySelector('#arrow-left')
+        
+            arrowL.addEventListener('click', ()=>{
             position_slide -= 1; //valor que mudara os slides
             
             if((position_slide-1)){ //quando maior que zero
@@ -81,7 +82,8 @@
             all_slide.style.translate = (position_slide * 100) + 'vw' //tag que calculará a posição e mudará
         })
 
-        const arrowR = document.querySelector('#arrow-right').addEventListener('click', ()=>{
+        const arrowR = document.querySelector('#arrow-right')
+            arrowR.addEventListener('click', ()=>{
             
                 position_slide += 1;
              //caso o if e else anterior afete a seta da direita
