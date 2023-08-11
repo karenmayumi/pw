@@ -48,11 +48,7 @@
             </div>
             
         </div>
-
-
-
     </main>
-
     <footer>
         Luísa Gimenes Cavalhieri e Karen Mayumi Rosa.
     </footer>
@@ -60,44 +56,66 @@
 
     <script>
 
-        var position_slide = 1; //posicao inicial = 0
+        var position_slide = 1; //posicao inicial = 1
         const all_slide = document.querySelector('#slide-both'); //variavel que mexera os slides
         const arrowL = document.querySelector('#arrow-left')
         const arrowR = document.querySelector('#arrow-right')
 
-             arrowR.addEventListener('click', ()=>{
+        
 
-                 if(position_slide<3){
+             arrowL.addEventListener('click', ()=>{
+                position_slide -= 1;
+                switch (position_slide){
+                    case 1: 
+                        arrowL.style.visibility = 'hidden';
+                        arrowR.style.visibility = 'visible'
+                        all_slide.style.translate ='0';
+                    break;
+                    case 2:
+                        arrowL.style.visibility = 'visible';
+                        arrowR.style.visibility = 'visible'
+                        all_slide.style.translate ='-100vw';
+                    break;
+                    case 3: 
+                        arrowL.style.visibility = 'visible';
+                        arrowR.style.visibility = 'hidden';
+                        all_slide.style.translate ='-200vw';
+                    break;
+                    default:
+                        console.log('deu erro, a posicao do slide é diferente do esperado')
+                        position_slide += 1; //cancelar a adição anterior
+                    break;
+                    }
+                })
+                
+                // document.getElementById('cnpj_erro').style.visibility = "visible";
+
+                
+            arrowR.addEventListener('click', ()=>{
                 position_slide += 1;
-                all_slide.style.translate = position_slide * -100 + 'vw' //tag que calculará a posição e mudará
-                    //if(position_slide==3){ //se a posicao do slide for a ultima
-                    //    arrowR.style.visibility = 'hidden' //esconder arrow direito
-                    //}else{ //se não
-                    //    arrowR.style.visibility = 'visible' //deixá-lo visível
-                    //}
-                     
-                 }else{
-                    console.log('erro! alguem conseguiu clicar na seta direita mesmo estando no maximo permitido!')
-                 }
+                switch (position_slide){
+                    case 1: 
+                        arrowL.style.visibility = 'hidden';
+                        arrowR.style.visibility = 'visible'
+                        all_slide.style.translate ='0';
+                    break;
+                    case 2:
+                        arrowL.style.visibility = 'visible'
+                        arrowR.style.visibility = 'visible'
+                        all_slide.style.translate ='-100vw';
+                    break;
+                    case 3: 
+                        arrowL.style.visibility = 'visible'
+                        arrowR.style.visibility = 'hidden'
+                        all_slide.style.translate ='-200vw';
+                    break;
+                    default:
+                        console.log('deu erro, a posicao do slide é diferente do esperado')
+                        position_slide -= 1; //cancelar a adição anterior
+                    break;
+                }
             })
         
-            arrowL.addEventListener('click', ()=>{
-
-                if(position_slide>0){
-                    position_slide -= 1; //valor que mudara os slides
-                    all_slide.style.translate = (position_slide * 100) + 'vw' //tag que calculará a posição e mudará
-                    
-                    if(position_slide>0){ //quando maior que zero
-                    //    arrowL.style.visibility = 'visible'; //vai ser visivel
-                        //botar pointer events
-                    }else{ //quando chegou no zero
-                    //    arrowL.style.visibility = 'hidden'; //vai ficar escondido
-                    }
-                }else{
-                    console.log('erro! alguem conseguiu clicar na seta esquerda mesmo estando no minimo permitido!')
-                }
-        })
-
     </script>
     
 

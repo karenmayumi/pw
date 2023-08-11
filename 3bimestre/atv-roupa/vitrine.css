@@ -74,6 +74,9 @@ main{
     position: relative;
     overflow: hidden;
 }
+#slide-both{
+    transition: .5s;
+}
 #slide-initial{
     width: 300vw;
     display: flex;
@@ -84,6 +87,7 @@ main{
     display: flex;
     justify-content: center;
     align-items: center;
+    overflow: hidden;
 }
 .slides img{
     width: 40em;
@@ -99,8 +103,8 @@ main{
     translate: 0 -100%;
 }
 #slide-base #slide-initial .slides{
-    transform: scale(2.5);
-    filter: blur(2px) grayscale(93%); 
+    transform: scale(2.4);
+    filter: blur(2px) grayscale(93%);
 }
 
 .arrows{
@@ -111,7 +115,7 @@ main{
     position: absolute;
     top: 50%;
     transform: translateY(-50%);
-    
+    transition: .5s;
 }
 .arrow{
     border-bottom: 2em solid transparent;
@@ -120,13 +124,15 @@ main{
     border-right: 2em solid #00000091;
     margin: 0 3em;
     cursor: pointer;
-    transition: .35s;
+    transition: .4s;
 }
 .arrow:hover{
     border-right: 2em solid #000000d7;
     transition: .2s;
 }
-
+#arrow-left{
+    visibility: hidden; 
+}
 #arrow-right{
     transform: scale(-1);
 }
