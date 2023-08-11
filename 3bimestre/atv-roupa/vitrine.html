@@ -184,14 +184,14 @@
         const allsec = document.querySelector('#all-secs')
         const arrowleft2 = document.querySelector('#arrow-left2')
         arrowleft2.addEventListener('click',()=>{
-            allsec.style.translate = "0"
+            allsec.style.transform = 'translateX(0)';
             arrowright2.style.visibility = 'hidden'
             arrowleft2.style.visibility = 'visible'
             console.log('esquerda clicado')
         })
         const arrowright2 = document.querySelector('#arrow-right2')
         arrowright2.addEventListener('click',()=>{
-            allsec.style.translate = '100vw';
+            allsec.style.transform = 'translateX(-100vw)';
             arrowright2.style.visibility = 'visible';
             arrowleft2.style.visibility = 'hidden';
             console.log('right clicado')
