@@ -218,6 +218,7 @@ footer{
 }
 footer .water-mark{
     font-size: 3.5rem;
+    user-select:none;
 }
 .water-mark img{
     transform: translateY(25%);
