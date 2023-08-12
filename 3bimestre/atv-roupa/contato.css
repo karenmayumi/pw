@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-     border: 1px solid red;  
+     /* border: 1px solid red;   */
     font-family: 'Poppins', sans-serif;
 }
 :root{
@@ -72,7 +72,7 @@ main{
 }
 #form-suporte{
     height: 27.5em;
-    width: 30em;
+    width: 25em;
     border-radius: 7px;
     box-shadow: 0 0 1.5em #d2a4f8;
     padding: 10px;
