@@ -14,7 +14,7 @@
     --purplelight:#c9c1e0;
     --purple: #837ad8;
     --grey: #d6dbe4;
-    --black: #0b001f;
+    --black: #000000;
 }
 body{
     background-color: var(--grey);
