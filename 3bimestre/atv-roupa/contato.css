@@ -4,7 +4,7 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
-    /* border: 1px solid red;  */
+     border: 1px solid red;  
     font-family: 'Poppins', sans-serif;
 }
 :root{
@@ -87,9 +87,13 @@ main{
 .form-items{
     display: flex;
     flex-direction: column;
+    align-items: center;
 }
 input, textarea{
     background-color: #ecd8dd;
+    border-radius: 7px;
+    border: none;
+    width: 25em;
 }
 /*/////////////////////////////////////////////////////////////*/
 /* FOOTER */
