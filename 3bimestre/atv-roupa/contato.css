@@ -59,7 +59,7 @@ header ul li{
     border-bottom: 2px solid #837ad8;
 }
 
-#icon-site{
+.icon-site{
     width: 75px;
     aspect-ratio: 1;
 }
@@ -90,4 +90,19 @@ main{
 }
 input, textarea{
     background-color: #ecd8dd;
+}
+/*/////////////////////////////////////////////////////////////*/
+/* FOOTER */
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3em;
+}
+footer .water-mark{
+    font-size: 3.5rem;
+}
+.water-mark img{
+    transform: translateY(25%);
 }

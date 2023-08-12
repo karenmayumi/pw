@@ -67,13 +67,15 @@ header ul li{
     border-bottom: 2px solid var(--purple);
 }
 
-#icon-site{
+.icon-site{
     width: 75px;
     aspect-ratio: 1;
 }
-
-#info-sn{
+body{
+    
     background-color: var(--grey);
+}
+#info-sn{
     padding: 5em 0;
 }
 .desc-base{
@@ -118,4 +120,19 @@ h3 span{
 }
 #db2{
     flex-direction: row-reverse;
+}
+/*/////////////////////////////////////////////////////////////*/
+/* FOOTER */
+footer{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 3em;
+}
+footer .water-mark{
+    font-size: 3.5rem;
+}
+.water-mark img{
+    transform: translateY(25%);
 }
