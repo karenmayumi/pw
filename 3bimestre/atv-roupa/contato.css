@@ -8,7 +8,13 @@
     font-family: 'Poppins', sans-serif;
 }
 :root{
+    --pinklight: #e5b6c9;
+    --pink: #d81566;
+    --pinkdark: #57143d;
+    --purplelight:#c9c1e0;
+    --purple: #837ad8;
     --grey: #d6dbe4;
+    --black: #0b001f;
 }
 body{
     background-color: var(--grey);
@@ -45,7 +51,7 @@ header ul li{
 .header-link:after{
     content: '';
     width: 0;
-    border-bottom: 2px solid #d81566;
+    border-bottom: 2px solid var(--pink);
     position: absolute;
     top: 100%;
     left: 0;
@@ -56,7 +62,7 @@ header ul li{
     transition: .3s;
 }
 .atual-link{
-    border-bottom: 2px solid #837ad8;
+    border-bottom: 2px solid var(--purple);
 }
 
 .icon-site{
@@ -65,17 +71,18 @@ header ul li{
 }
 
 main{
-    height: 80vh;
+    background-color: var(--black);
+    height: 90vh;
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 #form-suporte{
-    height: 27.5em;
+    height: 32em;
     width: 25em;
     border-radius: 7px;
-    box-shadow: 0 0 1.5em #d2a4f8;
-    padding: 10px;
+    box-shadow: 0 0 1.5em #020003;
+    padding: 15px;
     background-color: #fff;
 }
 #form-suporte fieldset{
@@ -84,20 +91,68 @@ main{
     text-align: center;
 
 }
+fieldset span{
+    font-size: 15px;
+    color: #62576b;
+}
 .form-items{
     display: flex;
     flex-direction: column;
     align-items: center;
+    transform: translateY(-10px);
+}
+.form-items label{
+    margin-top: 10px;
 }
 input, textarea{
-    background-color: #ecd8dd;
-    border-radius: 7px;
-    border: none;
     width: 25em;
+    background-color: var(--pinkdark);
+    border-radius: 7px;
+    border: 1px solid #fff;
+    color: #fff;
+    padding: .3rem 1rem;
+}
+input:focus, textarea:focus{
+    border: 1px solid #6e00c9be;
+}
+textarea{
+    min-width: min-content;
+    max-width:min-content;
+    min-height: min-content;
+    max-height:min-content;
+}
+.btns{
+    width: 100%;
+    display: flex;
+    justify-content: space-evenly;
+    margin-top: 5px;
+}
+.btns button{
+    width: 40%;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+#clear{
+    background-color: var(--pinklight);
+    transition: .25s;
+}
+#clear:hover{
+    background-color: #f097ba;
+    transition: .4s;
+}
+#send{
+    background-color: var(--purplelight);
+    transition: .25s;
+}
+#send:hover{
+    background-color: #c1b3e2;
+    transition: .4s;
 }
 /*/////////////////////////////////////////////////////////////*/
 /* FOOTER */
 footer{
+    background-color: var(--grey);
     display: flex;
     flex-direction: column;
     justify-content: center;
