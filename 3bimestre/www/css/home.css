@@ -47,15 +47,16 @@ section{
     padding: 0 clamp(2rem, 10rem, 15em);
 }
 .section2{
-    
+    flex-direction: row-reverse;
 }
+
 /* bases */
 header{
     background-color: var(--header-color);
 }
 main{
     background-color: var(--main-color);
-    height: 60vh;
+    padding: 3em 0;
 }
 footer{
     background-color: var(--footer-color);
