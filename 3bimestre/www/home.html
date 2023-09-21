@@ -5,31 +5,63 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/home.css">
+    <link rel="stylesheet" href="css/slideshow.css">
     <title>7 de Setembro - Home</title>
 </head>
 <body>
-    <header>
-        <nav>
-            <ul class="center">
-                <li><a href="./home.html" target="_blank" class="atual">Home</a></li>
-                <li><a href="./sobre.html" target="_blank">Sobre</a></li>
-                <li><a href="./contato.html" target="_blank">Contato</a></li>
-            </ul>
-        </nav>
+    <header id="header" class="center">
+        <img src="img/logo.png" alt="7 de setembro logo">
     </header>
+    <nav>
+        <ul class="center">
+            <li><a href="home.html" class="active">Home</a></li>
+            <li><a href="sobre.html">Sobre</a></li>
+            <li><a href="contato.html">Contato</a></li>
+        </ul>
+    </nav>
     <main>
-        <h1 class="center">7 de Setembro, Independência do Brasil</h1>
-        <section>
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus deleniti dolor laudantium officiis nihil laborum nesciunt eaque accusantium, velit ut voluptate, quos maiores!</p>
-            <img src="./img/bandeira.jpg" alt="Imagem Histórica">
-        </section>
-        <section class="section2">
-            <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Repellendus deleniti dolor laudantium officiis nihil laborum nesciunt eaque accusantium, velit ut voluptate, quos maiores!</p>
-            <img src="./img/bandeira.jpg" alt="Imagem Histórica">
-        </section>
+        
+
+        <article class="base">
+            <section id="descricao">
+                <h1>Acontecimento Histórico</h1>
+                <div class="funcionamento">
+                    <div class="text">
+                        <h2>O Grito do Ipiranga: O Momento Histórico da Independência</h2>
+                        <p>Em 7 de setembro de 1822, às margens do Rio Ipiranga, Dom Pedro I proclamou a independência do Brasil de Portugal, dando início a uma jornada rumo à liberdade. Este marco histórico é celebrado anualmente como o Dia da Independência, relembrando a coragem e determinação que forjaram nossa nação.</p> 
+                    </div>
+
+                    <swiper-container class="mySwiper" pagination="true" pagination-clickable="true" navigation="true" space-between="30" centered-slides="true" autoplay-delay="2500" autoplay-disable-on-interaction="false">
+                        <swiper-slide><img src="./img/dep/img2.jpg" alt="bandeira 1"></swiper-slide>
+                        <swiper-slide><img src="./img/dep/img3.jpg" alt="bandeira 2"></swiper-slide>
+                        <swiper-slide><img src="./img/dep/img4.jpg" alt="bandeira 3"></swiper-slide>
+                        <div class="autoplay-progress" slot="container-end">
+                        <svg viewBox="0 0 48 48">
+                            <circle cx="24" cy="24" r="20"></circle>
+                        </svg>
+                        <span></span>
+                        </div>
+                    </swiper-container>
+                </div>
+                <div class="reflexao">
+                    <img src="./img/dep/img1.jpg" alt="independencia do Brasil">
+                    <div class="text">
+                        <h2>O Dia da Independência: Celebração e Reflexão</h2>
+                        <p>A independência do Brasil não foi apenas o rompimento de laços coloniais, mas também o início de uma jornada em direção à construção de uma nação diversa e unificada. Hoje, celebramos nossa rica herança cultural e nossa identidade como brasileiros orgulhosos.
+                        </p>
+                        <p>O 7 de setembro é mais do que um feriado nacional. A independência do Brasil, proclamada em 1822, teve implicações profundas na trajetória em direção à abolição da escravidão no país. Embora esses dois eventos históricos não tenham ocorrido simultaneamente, eles estão intrinsecamente ligados de várias maneiras  O dia é uma oportunidade para refletir sobre nossa história, reconhecer as lutas e conquistas, e renovar nosso compromisso com os valores de liberdade, democracia e igualdade que sustentam o Brasil como nação independente.</p>
+                    </div>
+                </div>
+            </section>
+        </article>
+
+       
+
     </main>
     <footer class="center">
-        <p>© 2023 Karen Mayumi Rosa, all rights reserved</p>
+        <p>© 2023 Luane Vitória e Karen Mayumi Rosa, all rights reserved</p>
     </footer>
+    <script src="./slideshow.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@10/swiper-element-bundle.min.js"></script>
 </body>
 </html>

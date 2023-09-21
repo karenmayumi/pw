@@ -4,11 +4,37 @@
     padding: 0; 
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    /* border: 1px solid #74b472bd;    */
 }
 :root{
-    --header-color: #a3c5e4;
-    --footer-color: #9fb3c5;
-    --main-color: #7c85bd;
+    --header-color: #7bd17d;
+    --footer-color: #2c619e;
+    --main-color: #7bd17d;
+    --nav-color: #f3e631;
+
+    --depcard-color: #c6ace4;
+
+    --titulos: 50px;
+    --psize: 1rem;
+}
+
+html{
+    scroll-behavior: smooth;
+}
+/* bases */
+header{
+    background-color: var(--header-color);
+    height: 75px;
+    z-index: 2;
+    position: relative;
+}
+main{
+    background-color: var(--main-color);
+    color: #fff;
+}
+footer{
+    background-color: var(--footer-color);
+    height: 10rem;
 }
 /* classes reutilizáveis */
 .center{
@@ -18,47 +44,205 @@
 }
 
 /* unitárias */
+#header{
+    padding: 1em;
+    z-index: 3;
+}
+#header img{
+    display: block;
+}
 nav{
     padding: 10px 0;
+    position: sticky;
+    top: 0;
+    background-color: var(--nav-color);
+    box-shadow: 0 0 15px #0e2a44;
+    z-index: 2;
+    backdrop-filter: blur(2px);
+    transition: .4s;
+}
+nav:hover{
+    background-color: #f0f8ff;
+    transition: .4s;
+
 }
 nav ul{
     list-style: none;
-    gap: 2em;
-}
-a{
-    text-decoration: none;
+    gap: 2%;
     color: #0e2a44;
+}
+nav a{
+    text-decoration: none;
+    color: inherit;
     border-bottom: 2px solid transparent;
     transition: .4s;
 }
-a:hover{
+nav a:hover{
     border-bottom: 2px solid #126363;
     transition: .4s;
 
 }
-.atual{
+.active{
     color: #126363;
     border-bottom: 2px solid #0a559b;
 }
+
 section{
+    width: min(90%, 70em);
+    margin-inline: auto;
+    padding: 3rem 0;
+}
+section h1{
+    text-align: center;
+    padding: 1rem 0;
+    font-size: var(--titulos);
+}
+/* each section */
+#base p{
+    text-align: center;
+    font-size: var(--psize);
+}
+#descricao{
+    color: aliceblue;
+}
+#descricao div{
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 0 clamp(2rem, 10rem, 15em);
-}
-.section2{
-    flex-direction: row-reverse;
 }
 
-/* bases */
-header{
+#descricao .text{
+    flex-direction: column;
+    gap: 1em;
+    padding: 20px;
+    width: 50vw;
+}
+#descricao div img{
+    object-fit: cover;
+    height: 250px;
+    aspect-ratio: 4 / 3;
+
+}
+/* --receitas-- */
+.cards-receitas{
+    display: grid;
+    gap: 5em;
+    grid-template-columns: repeat(3, 1fr);
+    padding: 0 2em;
+}
+.card-rec{
     background-color: var(--header-color);
+    border-radius: 10px;
+    position: relative;
+    overflow: hidden;
+    border-radius: 10px;
+    box-shadow: 5px 5px 20px 0 #1d2783;
+    transition: .5s;
+    cursor: default;
 }
-main{
-    background-color: var(--main-color);
-    padding: 3em 0;
+.card-rec:hover{
+    transform: translateX(-20px) translateY(-20px);
+    transition: .3s;
 }
-footer{
-    background-color: var(--footer-color);
-    height: 10vh;
+
+.card-rec p{
+    display: -webkit-box;
+    -webkit-line-clamp: 3;
+    -webkit-box-orient: vertical;
+    overflow: hidden;
 }
+.card-rec h3{
+    line-height: 1.2;
+    color: #ffffff;
+}
+.card-rec img{
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+    display: block;
+}
+.card-rec .text{
+    padding: 15px 15px 40px;
+    line-height: 1.5;
+    color: #0e2a44;
+}
+.btn-receita:hover .card-rec{
+    box-shadow: 5px 5px 20px 0 #4d1d83;
+    background-color: #000;
+}
+.btn-receita{
+    position: absolute;
+    bottom: 15px;
+    right: 15px;
+    text-decoration: none;
+    color: #2079df;
+    padding: .1em .75em;
+    background-color: #cbddff;
+    /* border-radius: 10px 10px 0; */
+    border-radius: 10px 0 10px;
+    transition: .4s;
+}
+.btn-receita:hover{
+    color: #fff;
+    background-color: #506099;
+    border-radius: 10px;
+    transition: .3s;
+}
+
+/* --educamente ctrlcctrlv-- */
+.card {
+    width: 300px;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 15px #77dcee80;
+    text-align: center;
+    background-color: #212455;
+}
+
+.title {
+    font-size: 24px;
+    color: #94eaff;
+}
+
+.benefits {
+    list-style-type: none;
+    padding: 0;
+}
+
+.benefits li {
+    margin-bottom: 10px;
+}
+
+.buy-button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
+    transition: .4s;
+}
+.buy-button:hover{
+    background-color: #0161c7;
+    transition: .4s;
+}
+.plano-content{
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    gap: 2rem;
+}
+.plano-content img{
+    width: 30vw;
+}
+.ebook{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+

@@ -4,4 +4,143 @@
     padding: 0; 
     box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
+    /* border: 1px solid #74b472bd;    */
+}
+:root{
+    --header-color: #7bd17d;
+    --footer-color: #2c619e;
+    --main-color: #06225c;
+    --nav-color: #f3e631;
+
+    --depcard-color: #acb9e4;
+
+    --titulos: 50px;
+    --psize: 1rem;
+}
+html{
+    scroll-behavior: smooth;
+}
+/* classes reutilizáveis */
+.center{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* unitárias */
+#header{
+    padding: 1em;
+    z-index: 3;
+}
+#header img{
+    display: block;
+}
+nav{
+    padding: 10px 0;
+    position: sticky;
+    top: 0;
+    background-color: var(--nav-color);
+    box-shadow: 0 0 15px #0e2a44;
+    z-index: 2;
+    backdrop-filter: blur(2px);
+    transition: .4s;
+}
+nav:hover{
+    background-color: #f0f8ff;
+    transition: .4s;
+
+}
+nav ul{
+    list-style: none;
+    gap: 2%;
+    color: #0e2a44;
+}
+nav a{
+    text-decoration: none;
+    color: inherit;
+    border-bottom: 2px solid transparent;
+    transition: .4s;
+}
+nav a:hover{
+    border-bottom: 2px solid #126363;
+    transition: .4s;
+
+}
+.active{
+    color: #126363;
+    border-bottom: 2px solid #0a559b;
+}
+
+section{
+    width: min(90%, 70em);
+    margin-inline: auto;
+    padding: 3rem 0;
+}
+section h1{
+    text-align: center;
+    padding: 1rem 0;
+    font-size: var(--titulos);
+}
+/* each section */
+#base p{
+    text-align: center;
+    font-size: var(--psize);
+}
+
+/* --depoimento-- */
+.dep-grid{
+    display: grid;
+    gap: 1.25rem;
+
+    width: min(90%, 70em);
+    margin-inline: auto;
+}
+@media (min-width:60em){
+    .grid-col-span-2{
+        grid-column: span 2;
+    }
+    .dep-grid{
+        grid-template-columns: repeat(4, 1fr);
+
+    }
+    .card-dep:last-child{
+        grid-column-start: 4;
+        grid-row: 1 / span 2;
+    }
+
+    
+}
+
+.faixa{
+    display: flex;
+    gap: 50px;
+    justify-content: space-around;
+}
+.caixa{
+    width: 200px;
+    background-color: red;
+    gap: 20px;
+    height: 300px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+}
+.caixa img{
+    width: 100%;
+}
+
+/* bases */
+header{
+    background-color: var(--header-color);
+    height: 75px;
+    z-index: 2;
+    position: relative;
+}
+main{
+    background-color: var(--main-color);
+    color: #fff;
+}
+footer{
+    background-color: var(--footer-color);
+    height: 10rem;
 }

@@ -1,6 +1,7 @@
 swiper-container {
-    width: 200px;
-    aspect-ratio: 7 / 16;
+    height: 300px;
+    aspect-ratio: 4 / 3;
+    overflow: hidden;
   }
 
   swiper-slide {
@@ -11,13 +12,14 @@ swiper-container {
     justify-content: center;
     align-items: center;
     color: black;
+    object-fit: cover;
+    height: min-content;
   }
 
   swiper-slide img {
     display: block;
     width: 100%;
     height: 100%;
-    object-fit: cover;
   }
 
   .autoplay-progress {
