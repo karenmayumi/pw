@@ -8,8 +8,8 @@
 }
 :root{
     --header-color: #7bd17d;
-    --footer-color: #9fb3c5;
-    --main-color: #2c619e;
+    --footer-color: #2c619e;
+    --main-color: #83bdff;
     --nav-color: #f3e631;
 
     --titulos: 50px;
@@ -26,9 +26,13 @@ header{
     z-index: 2;
     position: relative;
 }
+header img{
+    height: 300%;
+    pointer-events: none;
+}
 main{
     background-color: var(--main-color);
-    color: #fff;
+    color: #0a1752;
 }
 footer{
     background-color: var(--footer-color);

@@ -9,7 +9,7 @@
 :root{
     --header-color: #7bd17d;
     --footer-color: #2c619e;
-    --main-color: #7bd17d;
+    --main-color: #459cee;
     --nav-color: #f3e631;
 
     --depcard-color: #c6ace4;
@@ -27,6 +27,10 @@ header{
     height: 75px;
     z-index: 2;
     position: relative;
+}
+header img{
+    height: 300%;
+    pointer-events: none;
 }
 main{
     background-color: var(--main-color);
