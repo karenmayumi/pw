@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .active {
+            color: red;
+        }
+        #navbar{
+            background-color: aquamarine;
+            position: sticky;
+            top: 0;
+        }
+    </style>
+</head>
+<body>
+
+    <nav id="navbar">
+        <ul>
+            <li><a href="#section1">Seção 1</a></li>
+            <li><a href="#section2">Seção 2</a></li>
+            <li><a href="#section3">Seção 3</a></li>
+        </ul>
+    </nav>
+
+    <div id="section1" style="height: 800px;">Conteúdo da Seção 1</div>
+    <div id="section2" style="height: 800px;">Conteúdo da Seção 2</div>
+    <div id="section3" style="height: 800px;">Conteúdo da Seção 3</div>
+
+    <script>
+        var sections = document.querySelectorAll('nav ul li a');
+        var divs = document.querySelectorAll('div');
+
+        window.onscroll = function() {
+            var scrollPos = window.pageYOffset || document.documentElement.scrollTop;
+
+            divs.forEach(function(div, i) {
+                if (div.offsetTop <= scrollPos && (div.offsetTop + div.offsetHeight) > scrollPos) {
+                    sections.forEach(function(section) { section.classList.remove('active'); });
+                    sections[i].classList.add('active');
+                }
+            });
+        };
+    </script>
+
+</body>
+</html>
