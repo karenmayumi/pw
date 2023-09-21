@@ -176,8 +176,8 @@ th {
     padding-bottom:45px; 
     text-transform:uppercase;
     letter-spacing: 6px;
-  }
-  .title-form h1:before {
+}
+.title-form h1:before {
     position: absolute;
     left: 0;
     bottom: 20px;
@@ -188,9 +188,8 @@ th {
     content: "";
     background-color: #ffffff; 
     z-index: 4;
-  }
-
-  .box-formulario {
+}
+.box-formulario {
       width: 100%;
       align-items: center;
       display: flex;
@@ -202,14 +201,14 @@ th {
       background-repeat: no-repeat;
       background-size: 100%;
       padding:50px;
-  }
-  .formulario {
-      width: 400px;
-      background: #fafbfc;
-      padding: 10px 2%;
-      text-align: center;
-      border-radius: 10px;
-  }
+}
+.formulario {
+    width: 400px;
+    background: #fafbfc;
+    padding: 10px 2%;
+    text-align: center;
+    border-radius: 10px;
+}
   .formulario span {
     position: relative;
     display: flex;
@@ -298,7 +297,7 @@ th {
     border-radius: 50px;
     outline: 0;
     transition: all .3s ease-in-out;
-    box-shadow: 0 13px 8px -8px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 13px 8px -8px rgba(0, 0, 0, 0.5), inset 0 5px 15px 0 #3c5d833b;
   }
   .textarea-balao-up::-webkit-input-placeholder {
     color: #00B6FF;
